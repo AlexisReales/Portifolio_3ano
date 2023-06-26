@@ -1,0 +1,100 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #111;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 90svh;
+    width: 70%;
+    margin: auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+}
+header h1{
+    color: #fff;
+}
+header nav a{
+    color: #fff;
+    font-size: 15px;
+}
+header nav a:hover{
+    color: #555;
+    zoom: 110%;
+}
+.separador:hover{
+    zoom: 100%;
+    color: #000;
+}
+.itens{
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    padding: 15px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+main{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+main p{
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+}
+aside{
+    width: 50%;
+}
+aside figure img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+figcaption{
+    color: #fff;
+}
+.materias{
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+.materias figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.itensmaterias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.materias figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
