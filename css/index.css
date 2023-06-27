@@ -38,30 +38,30 @@ header nav a{
     font-size: 15px;
 }
 header nav a:hover{
-    color: #555;
+    color: #dcd4d4;
     zoom: 110%;
 }
 .separador:hover{
     zoom: 100%;
-    color: #000;
+    color: #fff;
 }
 .itens{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: #222;
     padding: 15px;
-    justify-content: space-around;
     border-radius: 10px;
 }
 main{
-    width: 50%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 main p{
     font-size: 12px;
-    text-align: left;
+    text-align: justify;
     padding: 10px;
     color: #fff;
 }
@@ -97,4 +97,11 @@ figcaption{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.materias figure img:hover{
+    box-shadow: 5px 4px #111;
+}
+.title{
+    text-align: center;
+    padding: 10px;
 }
