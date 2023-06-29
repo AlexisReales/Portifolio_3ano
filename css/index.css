@@ -19,7 +19,7 @@ body{
     justify-content: center;
     text-align: center;
     height: 90svh;
-    width: 70%;
+    width: 40%;
     margin: auto;
 }
 header{
@@ -28,14 +28,14 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #222;
-    padding: 10px;
+    padding: 15px;
 }
 header h1{
     color: #fff;
 }
 header nav a{
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
 }
 header nav a:hover{
     color: #dcd4d4;
@@ -60,7 +60,7 @@ main{
     margin: auto;
 }
 main p{
-    font-size: 12px;
+    font-size: 20px;
     text-align: justify;
     padding: 10px;
     color: #fff;
@@ -74,7 +74,7 @@ main p{
 }
 .button{
     margin: 10px;
-    padding: 5px;
+    padding: 15px;
     border: none;
     background-color: #555;
     color: #fff;
@@ -82,7 +82,7 @@ main p{
 }
 .button a{
     color: #fff;
-    
+    font-weight: bold;
 }
 button{
     cursor: pointer;
@@ -91,9 +91,9 @@ aside{
     width: 50%;
 }
 aside figure img{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
 }
 figcaption{
     color: #fff;
@@ -105,8 +105,8 @@ figcaption{
     border-radius: 5px;
 }
 .materias figure img{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 25px;
     margin: 10px;
 }

@@ -42,7 +42,7 @@ main{
     margin-bottom: 20px;
 }
 button{
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     background-color: #000;
     border-radius: 10px;
@@ -52,5 +52,5 @@ a button{
     color: #fff;
 }
 i{
-    font-size: 50px;
+    font-size: 70px;
 }
