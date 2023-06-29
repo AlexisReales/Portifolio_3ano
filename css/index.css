@@ -65,6 +65,24 @@ main p{
     padding: 10px;
     color: #fff;
 }
+.portifoliosAnteriores{
+    background-color: #222;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button{
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 10px;
+}
+button{
+    cursor: pointer;
+}
 aside{
     width: 50%;
 }
@@ -80,7 +98,7 @@ figcaption{
     color: #fff;
     background-color: #333;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .materias figure img{
     width: 100px;
