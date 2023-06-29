@@ -80,6 +80,10 @@ main p{
     color: #fff;
     border-radius: 10px;
 }
+.button a{
+    color: #fff;
+    
+}
 button{
     cursor: pointer;
 }
