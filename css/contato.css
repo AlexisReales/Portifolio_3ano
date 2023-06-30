@@ -11,6 +11,9 @@
     user-select: none;
     font-family: 'Inter', sans-serif;
 }
+body{
+    background-color: #000;
+}
 .container{
     justify-content: center;
     text-align: center;
