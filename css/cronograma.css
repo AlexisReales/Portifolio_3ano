@@ -11,6 +11,9 @@
     user-select: none;
     font-family: 'Inter', sans-serif;
 }
+body{
+    background-color: #000;
+}
 .container{
     justify-content: center;
     text-align: center;
@@ -21,7 +24,7 @@ main{
     height: 80vh;
 }
 table, th, td{
-    border: solid 2px #000;
+    border: solid 2px #666;
     padding: 5px;
     background-color: aliceblue;
 }
@@ -35,7 +38,7 @@ header{
 button{
     padding: 8px;
     cursor: pointer;
-    background-color: #000;
+    background-color: #333;
     border-radius: 10px;
     border: none;
 }

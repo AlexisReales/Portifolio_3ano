@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhos do Bruno</title>
+</head>
+<body>
+    <div class="card" id="poo">
+        <h2>
+            Conceitos de POO
+        </h2>
+        <article>
+            <p class="explicacao">
+                <b>Objeto</b>: Um objeto é uma instância de uma classe e representa um elemento da vida real com características e comportamentos. Por exemplo, um objeto "carro" pode ter atributos como cor, modelo e marca, e métodos para acelerar, frear e virar.
+            </p>
+            <p class="explicacao">
+                <b>Classe</b>: Uma classe é um modelo ou uma planta para criar objetos. Ela define os atributos e métodos que os objetos dessa classe terão. Por exemplo, a classe "Carro" pode definir que todos os carros têm atributos como cor, modelo e marca, bem como métodos para operações relacionadas a carros.
+            </p>
+            <p class="explicacao">
+                <b>Encapsulamento</b>: É o conceito de esconder os detalhes internos de uma classe e expor apenas as interfaces públicas. Isso ajuda a manter a integridade dos dados e facilita a manutenção do código.
+            </p>
+            <p class="explicacao">
+                <b>Herança</b>: Herança é um mecanismo que permite que uma classe herde atributos e métodos de outra classe. Isso promove a reutilização de código e cria hierarquias de classes.
+            </p>
+            <p class="explicacao">
+                <b>Polimorfismo</b>: Polimorfismo permite que objetos de classes diferentes possam ser tratados de forma uniforme, simplificando a interação com objetos de classes diversas.
+            </p>
+            <p class="explicacao">
+                <b>Abstração</b>: A abstração é o processo de simplificar complexidades criando modelos que representam entidades do mundo real. Isso envolve identificar as características essenciais de um objeto e ignorar os detalhes não essenciais.
+            </p>
+        </article>
+    </div>
+    <div class="card" id="casosdeuso">
+        <h3>
+            Diagrama de Casos de Uso
+        </h3>
+        <article>
+            <p>
+                Neste caso, nós criamos soluções e casos para cada usuário do aplicativo, como os alunos e responsáveis
+                que usariam o serviço em seus celulares enquanto a coordenação, professores e portaria usariam o serviço
+                web por meio dos computadores presente.
+            </p>
+        </article>
+        <button>
+            <a href="https://docs.google.com/document/d/1bc_4WO_TZIZYW54Kjnos1Y1WHXPCxsFHjC7qmtCtHnc/edit">Clique para ler!</a>
+        </button>
+    </div>
+    <div class="card" id="figma">
+        <h3>
+            Protótipo Figma
+        </h3>
+        <article>
+            <p>
+                Usando a plataforma FIGMA, criamos um modelo de aplicativo e web para a nossa aplicação de entrada e sáida de alunos
+            </p>
+        </article>
+        <button>
+            <a href="https://www.figma.com/file/cauP2nt3V90DfIsxu3LdwQ/Tangy-Pass?type=design&node-id=0-1&mode=design">Clique para ver!</a>
+        </button>
+    </div>
+    <div class="card" id="telasapp">
+        <h3>
+            Principais imagens da tela do nosso app
+        </h3>
+        
+        <button id="anterior">Anterior</button>
+        <img id="imagem" src="../image/trabalhos/tecnico/t1.png" alt="Imagem 1">
+        <button id="proximo">Próximo</button>
+    </div>
+    <div class="card" id="diagramas">
+        <h3>
+            Diagramas: Atividade & Classe
+        </h3>
+        <article>
+            <p>
+                Nesta atividade envolvendo a SA, nós tivemos que criar um modelo de Atividade e Classes.
+            </p>
+        </article>
+        <div id="buttons">
+            <button>
+                <a href="https://lucid.app/lucidchart/80527f22-e489-4803-b374-d348acf01057/edit?invitationId=inv_f2d4d706-a50f-43f9-be24-758e3a25aa18&authuser=0&page=0_0">Clique para ver!</a>
+            </button>
+            <button>
+                <a href="https://lucid.app/lucidchart/6d52f864-309f-47b1-b98f-1256ba9af35a/edit?invitationId=inv_ab34ad08-a9d1-4bdd-8b0a-2a00f1b524f5&authuser=0&page=0_0">Clique para ver!</a>
+            </button>
+        </div>
+    </div>
+    <div class="card" id="desenvolvimento">
+        <h3>
+            Processo de desenvolver um Software
+        </h3>
+        <article>
+            <p>
+                Esta atividade nos fez trabalhar com uma api envolvendo react native, fortificando nossos conhecimentos 
+                e usando diversas ferramentas para criar um Software.
+            </p>
+        </article>
+        <button>
+            <a href="https://github.com/AlexisReales/Bruno_GitApi">Clique para acessar!</a>
+        </button>
+    </div>
+    <div class="card" id="">
+        
+    </div>
+    <script>
+        const imagens = [
+            '../image/trabalhos/tecnico/t1.png',
+            '../image/trabalhos/tecnico/t2.png',
+            '../image/trabalhos/tecnico/t3.png',
+            '../image/trabalhos/tecnico/t4.png',
+            '../image/trabalhos/tecnico/t5.png'
+        ]
+
+        const imagemElement = document.getElementById('imagem');
+        const botaoAnterior = document.getElementById('anterior');
+        const botaoProximo = document.getElementById('proximo');
+
+        let indiceImagemAtual = 0;
+
+        // Função para exibir a imagem atual
+        function exibirImagem() {
+            imagemElement.src = imagens[indiceImagemAtual];
+        }
+
+        // Event listener para o botão "Próximo"
+        botaoProximo.addEventListener('click', () => {
+            indiceImagemAtual = (indiceImagemAtual + 1) % imagens.length;
+            exibirImagem();
+        });
+
+        // Event listener para o botão "Anterior"
+        botaoAnterior.addEventListener('click', () => {
+            indiceImagemAtual = (indiceImagemAtual - 1 + imagens.length) % imagens.length;
+            exibirImagem();
+        });
+
+        // Exibir a primeira imagem ao carregar a página
+        exibirImagem();
+    </script>
+</body>
+</html>
