@@ -19,7 +19,7 @@ body{
     justify-content: center;
     text-align: center;
     height: 90svh;
-    width: 40%;
+    width: 100%;
     margin: auto;
 }
 header{
@@ -105,7 +105,7 @@ figcaption{
     border-radius: 5px;
 }
 .materias figure img{
-    width: 130px;
+    width: 130;
     height: 130px;
     border-radius: 25px;
     margin: 10px;
